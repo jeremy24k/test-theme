@@ -240,6 +240,16 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+   <!-----------------------link-slider-and-fonts-page-tadah----------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+    />
   </head>
 
   <body class="gradient">
@@ -297,5 +307,8 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <!--------------link-swiper-library-js----------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

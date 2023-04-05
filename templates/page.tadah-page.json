@@ -1,15 +1,30 @@
 {
   "sections": {
-    "main": {
-      "type": "main-list-collections",
-      "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square"
-      }
+    "section-hero":{
+      "type": "section-hero"
+    },
+    "section-flavor":{
+      "type": "section-flavor"
+    },
+    "section-fresh":{
+      "type": "section-fresh"
+    },
+    "section-tasty":{
+      "type": "section-tasty"
+    },
+    "section-variety":{
+      "type": "section-variety"
+    },
+    "section-chick":{
+      "type": "section-chick"
     }
   },
   "order": [
-    "main"
+    "section-hero",
+    "section-flavor",
+    "section-fresh",
+    "section-tasty",
+    "section-variety",
+    "section-chick"
   ]
 }
