@@ -92,6 +92,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media (max-width:790px) {
     .section-tasty {
         margin-top: 39px;
+        min-height: 0;
     }  
     .section-tasty .container-tasty .slider-tasty .box-slider-tasty {
         min-height: 300px;
@@ -112,7 +113,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   
     .section-tasty .background-image-tasty {
         max-width: 823px;
-        min-height: 269px;
+        max-height: 269px;
         object-fit: cover;
         bottom: 0;
         top: auto;

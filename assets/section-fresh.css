@@ -99,6 +99,7 @@
 @media (max-width:428px) {
     .section-fresh .conatiner-fresh .container-text-fresh .text-fresh {
         text-align: center;
+        max-width: 372px;
     }
 
     .section-fresh .conatiner-fresh .container-text-fresh .title-fresh {

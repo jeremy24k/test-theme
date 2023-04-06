@@ -130,6 +130,7 @@
 
   .container-flavor .container-cards-flavor .card-flavor .title-card-flavor {
     padding: 0 20px;
+    font-size: 20px;
   }
 
   .container-flavor .container-cards-flavor .card-flavor .button-card-flavor {
@@ -140,11 +141,16 @@
     max-width: 144px;
   }
 
-  .section-flavor
-    .container-flavor
-    .container-cards-flavor
-    .card-flavor
-    .img-flavor {
+  .section-flavor .container-flavor .container-text-flavor .title-flavor {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .section-flavor .container-flavor .container-text-flavor .text-flavor {
+
+  }
+
+  .section-flavor .container-flavor .container-cards-flavor .card-flavor .img-flavor {
     padding: 0 18px;
     min-height: 229px;
   }
