@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-.section-flavor .container-flavor {
-  max-width: 1440px;
-  margin: auto;
-}
-
 /* ----------title-and-text----------- */
 .section-flavor .container-flavor .container-text-flavor {
   padding: 68px 20px 26px 20px;
@@ -103,6 +98,12 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+
+.container-flavor .container-cards-flavor .card-flavor .button-card-flavor:hover {
+  background-color: #784129;
+  transition: 0.5s;
 }
 
 .container-flavor .container-cards-flavor .card-flavor .button-card-flavor p {

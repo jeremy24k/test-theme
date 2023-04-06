@@ -1,0 +1,260 @@
+/*-----------------general-rules-----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------boxes-color-top-----------------*/
+
+.container-navbar .color-boxes {
+    display: flex;
+}
+
+.container-navbar .color-boxes .box {
+    max-width: calc(100%/4);
+    width: 100%;
+    min-height: 12.54px;
+}
+
+.container-navbar .color-boxes .box-1 {
+    background-color: #F7D633;
+} 
+
+.container-navbar .color-boxes .box-2 {
+    background-color: #E12843;
+} 
+
+.container-navbar .color-boxes .box-3 {
+    background-color: #72CEE8;
+} 
+
+.container-navbar .color-boxes .box-4 {
+    background-color: #F47D34;
+} 
+
+/*------------------container-navbar-----------------*/
+
+.container-navbar .container-menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1202.13px;
+    margin: auto;
+    box-sizing: content-box;
+    padding: 25.46px 20px 31px 20px;
+}
+
+.container-navbar .container-menu .container-item-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 506.13px;
+    width: 100%;
+}
+
+.container-navbar .container-menu .container-item-menu .item-menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 406.72px;
+    width: 100%;
+}
+
+.container-navbar .container-menu .item-menu .item {
+    list-style: none;
+}
+
+.container-navbar .container-menu .item-menu .item a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E190F;
+}
+
+/*------------------dropdown-menu-----------------*/
+
+.container-navbar .container-menu .dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F7D633;
+    transform: translatey(-100%);
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.container-navbar .container-menu .active {
+    transform: translatey(0);
+}
+
+.container-navbar .container-menu .container-item-menu .buttom-responsive {
+    max-width: 25px;
+    width: 100%;
+    min-height: 19px;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.container-navbar .container-menu .dropdown-menu .item-menu-dropdown {
+    width: 80%;
+    padding: 80px 0;
+    margin: auto;
+}
+
+.container-navbar .container-menu .dropdown-menu .item-dropdown {
+    list-style: none;
+}
+
+.container-navbar .container-menu .dropdown-menu .item-dropdown a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    color: #2E190F;
+}
+
+.container-navbar .container-menu .container-item-menu .line {
+    max-width: 25px;
+    width: 100%;
+    min-height: 3px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+
+/*------------------animations-menu-----------------*/
+
+.container-navbar .container-menu .item-menu .item:hover a{
+    color: #F7D633;
+    transition: 0.5s;
+}
+
+.container-navbar .container-menu .dropdown-menu .item-dropdown:hover a {
+    color: white;
+    transition: 0.5s;
+}
+
+.container-navbar .container-menu .container-item-menu .buttom-responsive:hover .line {
+    background-color: #F7D633;
+    transition: 0.5s;
+}
+
+.container-navbar .container-menu .container-item-menu .convert:hover .line {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.container-navbar .container-menu .shopping-cart:hover * {
+    fill: #F7D633;
+    transition: 0.5s;
+}
+
+.effect-menu {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 9999;
+    top: 0;
+    box-shadow: 5px 5px 10px; 
+}
+
+.effect-menu .container-navbar .container-menu {
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+}
+
+/*------------------display-none-----------------*/
+
+
+.container-navbar .container-menu .container-item-menu .line-responsive {
+    display: none;
+} 
+
+.container-navbar .container-menu .container-item-menu .buttom-responsive {
+    display: none;
+}
+
+
+/*------------------@media-querys-----------------*/
+
+@media (max-width:768px) {
+
+    .container-navbar .container-menu {
+        padding: 21px 21px 25.06px 21px;
+    }
+
+    .container-navbar .container-menu .container-item-menu {
+        max-width: 76px;
+    }
+
+    .container-navbar .container-menu .container-item-menu .item-menu {
+        display: none;
+    }
+  
+    .container-navbar .container-menu .container-item-menu .line-responsive {
+        display: block;
+    } 
+    
+    .container-navbar .container-menu .container-item-menu .buttom-responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*------------------animations-buttom-menu-responsive-----------------*/
+
+    .container-navbar .container-menu .container-item-menu .convert  {
+        min-height: 20px;    
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        right: 20px;
+    }
+    
+    .container-navbar .container-menu .container-item-menu .convert .line-2 {
+        display: none;
+    }
+    
+    .container-navbar .container-menu .container-item-menu .convert .line-1 {
+        transform: rotate(45deg);
+        position: absolute;
+        transition: 0.5s;
+    }
+    
+    .container-navbar .container-menu .container-item-menu .convert .line-3 {
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .container-navbar .container-menu .container-item-menu .container-navbar-responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 76px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:428px) {
+
+    .container-navbar .color-boxes .box {
+        min-height: 5px;
+    }
+
+    .container-navbar .container-menu .logo-tadah {
+        min-width: 101px;
+        max-height: 29px;
+    }
+
+}

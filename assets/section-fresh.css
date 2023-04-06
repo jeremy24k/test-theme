@@ -9,8 +9,6 @@
 /*-------------section-fresh---------------*/
 
 .section-fresh .conatiner-fresh {
-    max-width: 1440px;
-    margin: auto;
     margin-top: 53px;
     display: flex;
     align-items: center;
@@ -21,7 +19,7 @@
     min-height: 516px;
     object-fit: cover;
     object-position: center;
-    z-index: 10;
+    z-index: 2;
 }
 
 .section-fresh .conatiner-fresh .container-text-fresh {
@@ -45,7 +43,7 @@
     line-height: 51px;
     color: #2E190F;
     margin-bottom: 29px;
-    z-index: 10;
+    z-index: 2;
 }
 
 .section-fresh .conatiner-fresh .container-text-fresh .text-fresh {
@@ -56,7 +54,7 @@
     font-size: 16px;
     line-height: 26px;
     color: #000000;
-    z-index: 10;
+    z-index: 2;
 }
 
 /*-------------img-background-fresh---------------*/
@@ -78,6 +76,7 @@
         width: 100%;
         object-fit: contain;
         min-height: auto;
+        z-index: 2;
     }
 
     .section-fresh .conatiner-fresh .container-text-fresh {
@@ -86,6 +85,14 @@
         padding: 49px 21px 0;
         justify-content: flex-start;
         min-height: auto;
+    }
+
+    .section-fresh .conatiner-fresh .container-text-fresh .title-fresh {
+        z-index: 2;
+    }
+
+    .section-fresh .conatiner-fresh .container-text-fresh .text-fresh {
+        z-index: 2;
     }
 }
 

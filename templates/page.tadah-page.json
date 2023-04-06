@@ -17,6 +17,9 @@
     },
     "section-chick":{
       "type": "section-chick"
+    },
+    "section-card":{
+      "type": "section-card"
     }
   },
   "order": [
@@ -25,6 +28,7 @@
     "section-fresh",
     "section-tasty",
     "section-variety",
-    "section-chick"
+    "section-chick",
+    "section-card"
   ]
 }

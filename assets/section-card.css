@@ -1,0 +1,189 @@
+/*-------------general-rules--------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------section-card--------------*/
+.container-card-globla .container-card  {
+    display: flex;
+    background-color: #E12843;
+}
+
+.container-card-globla .container-card .img-center {
+    max-width: 377px;
+    max-height: 370px;
+}
+
+.container-card-globla .container-card .card-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 640px;
+}
+
+.container-card-globla .container-card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-card-globla .container-card .card-text{
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card-globla .container-card .card-text .title-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+.container-global .container-card .card-text .title-text-responsive{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    display: none;
+}
+
+.container-card-globla .container-card .card-text .text-parraf {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 480px;
+    box-sizing: content-box;
+}
+
+.container-card-globla .container-card .card-text .text-parraf-responsive{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 443px;
+    display: none;
+}
+
+.container-card-globla .container-card .card-text .sub-title-parraf {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container-card-globla .box-2{
+    flex-direction: row-reverse;
+    background-color: #F47D34;
+}
+
+
+.container-card-globla .box-3 :nth-child(2) {
+    background-image: url(https://cdn.shopify.com/s/files/1/0740/5309/1615/files/background.png?v=1680660603);
+}
+
+.section-card .container-card-globla .logo-responsive {
+    display: none;
+}
+
+.section-card .container-card-globla .img-responsive{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .container-card-globla .container-card {
+        flex-direction: column;
+        min-height: 812px;
+    }
+    .container-card-globla .container-card .card-img {
+        width: 100%;
+        min-height: 406px;
+    }
+
+    .container-card-globla .container-card .card-img img { 
+        width: 100%;
+        max-height: 406px;
+        object-fit: cover;
+    }
+
+    .container-card-globla .container-card .card-text .text-parraf-box-1 {
+        display: none;
+    }
+
+    .container-card-globla .container-card .card-text .text-parraf-responsive{
+        display: block;
+        max-width: 395px;
+    }
+
+    .container-card-globla .container-card .card-text .title-text-box-2 {
+        display: none;
+    }
+
+    .container-card-globla .container-card .card-text .title-text-responsive{
+        display: block;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .container-global .container-card .card-text {
+        width: 100%;
+        min-height: 406px;
+        padding: 0 20px;
+    }
+
+    .container-card-globla .container-card .img-center {
+        display: none;
+    }
+
+    .container-card-globla .container-card .card-img .img-responsive {
+        display: block;
+        min-height: 406px;
+    }
+
+    .container-card-globla .container-card .card-text .logo-responsive {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 426px)  {
+
+    .container-card-globla .container-card {
+        min-height: 0;
+        justify-content: space-between;
+    }
+
+    .container-card-globla .container-card .card-img {
+        min-height: 0;
+    }
+
+    .container-card-globla .container-card .card-text {
+        min-height: 0;
+        padding: 60px 20px;
+    }
+
+}

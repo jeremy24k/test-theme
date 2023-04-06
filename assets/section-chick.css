@@ -22,9 +22,8 @@
 }
 
 .section-chick .container-chick {
-    max-width: 1440px;
-    margin: auto;
     box-sizing: content-box;
+    padding: 0 20px;
 }
 
 /*-------------title-chick---------------*/

@@ -6,9 +6,7 @@
 }
 
 .section-variety .container-variety {
-    max-width: 1440px;
     min-height: 500px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     padding-right: 124px;
@@ -58,6 +56,11 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+
+.section-variety .container-variety .container-text-variety .button-variety:hover {
+    background-color: #dec02a;
+    transition: 0.5s;
 }
 
 .section-variety .container-variety .container-text-variety .button-variety p{

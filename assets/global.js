@@ -1064,6 +1064,23 @@ class ProductRecommendations extends HTMLElement {
 
 customElements.define('product-recommendations', ProductRecommendations);
 
+// -------------dropdown-menu-navbar-tadah-----------
+const buttom = document.getElementById('buttom-responsive')
+let dropdownMenu = document.getElementById('dropdown-menu')
+
+buttom.addEventListener ('click', ()=> {
+    buttom.classList.toggle('convert');
+    dropdownMenu.classList.toggle('active');
+});
+
+// -------------dropdown-menu-scroll-effect-----------
+
+let navbar = document.getElementById('menu-tadah')
+
+window.addEventListener('scroll',()=> {
+  navbar.classList.toggle('effect-menu',window.scrollY>0);
+})
+
 //-----------slider-section-tasty-----------
 const sliderTasty = new Swiper('.container-slider-tasty', {
   slidesPerView: 3,
@@ -1088,7 +1105,7 @@ const sliderTasty = new Swiper('.container-slider-tasty', {
 
       768: {
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 20
       },
   }
 });
